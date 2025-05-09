@@ -21,6 +21,17 @@ section{
     grid-template-rows: repeat(3, 250px);
     margin-top: 30px;
 }
+@media (max-width:600px){
+    .box{
+        grid-template-columns: repeat(autofit,1fr);
+        grid-template-rows: repeat(autofit,200px);
+    }
+        section{
+        display: grid;
+        grid-template-columns:1fr;
+        
+    }
+}
 h1{
    font-weight: 600; 
 }
@@ -156,13 +167,6 @@ body{
 }
 .box:nth-child(8) img{
     margin-right: 20px;
-}
-
-@media (max-width: 600px){
-    section{
-        display: grid;
-        grid-template-columns:1fr;
-    }
 }
 
 
